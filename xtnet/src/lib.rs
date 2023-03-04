@@ -11,7 +11,8 @@
  * ```
  */
 
-//! cute
+
+/// cute
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
@@ -64,4 +65,23 @@ mod tests {
             assert_eq!(sum(input.0, input.1), output);
         }
     }
+}
+
+pub fn slow_fibonacci(nth: usize)->u64{
+    if nth <=1 {
+        return nth as u64;
+    }
+    return slow_fibonacci(nth -1) + slow_fibonacci(nth -2);
+}
+
+pub fn fast_fibonacci(nth:usize)->u64{
+    let mut a=0;
+    let mut b = 1;
+    let mut c =0;
+    for _ in 1..nth {
+        c=a+b;
+        a=b;
+        b=c;
+    }
+    c
 }
