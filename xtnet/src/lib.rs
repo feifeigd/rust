@@ -2,7 +2,7 @@ pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
 
-fn pow(base: i64, exponent: usize) -> i64 {
+pub fn pow(base: i64, exponent: usize) -> i64 {
     let mut res = 1;
     for _ in 0..exponent {
         res *= base;
@@ -13,6 +13,7 @@ fn pow(base: i64, exponent: usize) -> i64 {
 pub fn greet() {
     println!("Hi from xtnet")
 }
+
 #[cfg(test)]
 mod tests {
     use super::*;

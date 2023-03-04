@@ -2,8 +2,15 @@
 name = "app"
 version = "0.1.0"
 edition = "2021"
-
+readme="README.md"
+build="build.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+default=["mysql"]
 
 [dependencies]
 xtnet={path="../xtnet"}
+mysql={version="23", optional=true}
+sqlite={version="0", optional=true}
+redis="0"

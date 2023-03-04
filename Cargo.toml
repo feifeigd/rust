@@ -1,5 +1,8 @@
 [workspace]
 members=[
     "app",
+    "dining_philosophers",
+    "imgtool",
     "xtnet"
 ]
+
