@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/$USERNAME/$REPO_NAME.svg?branch=master)](https://travis-ci.org/creativcoder/logic_gates)
+[![Build Status](https://travis-ci.org/feifeigd/rust.svg?branch=master)](https://travis-ci.org/feifeigd/rust)
 
 # rust
 rust
