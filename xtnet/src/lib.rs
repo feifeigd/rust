@@ -1,7 +1,22 @@
+/*!
+ * This crate provides functionality for adding things
+ * 
+ * # Example
+ * ```
+ * use xtnet::sum;
+ * 
+ * let work_a = 4;
+ * let work_b = 34;
+ * let total_work = sum(work_a, work_b);
+ * ```
+ */
+
+//! cute
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
 
+/// pow
 pub fn pow(base: i64, exponent: usize) -> i64 {
     let mut res = 1;
     for _ in 0..exponent {
@@ -14,6 +29,13 @@ pub fn greet() {
     println!("Hi from xtnet")
 }
 
+/// Sum tow arguments
+/// 
+/// # Example
+/// 
+/// ```
+/// assert_eq!(xtnet::sum(1, 1), 2);
+/// ```
 pub fn sum(a: i8, b: i8) -> i8 {
     a + b
 }
