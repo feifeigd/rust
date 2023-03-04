@@ -1,3 +1,5 @@
+
+#![doc(html_logo_url="https://d30y9cdsu7xlg0.cloudfront.net/png/411962-200.png")]
 pub fn and(a: u8, b: u8) -> u8 {
     // a & b
     match (a, b) {
