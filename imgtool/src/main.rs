@@ -1,6 +1,5 @@
 use std::path::Path;
 
-
 use std::env;
 fn main() {
     let image_path = env::args().skip(1).next().unwrap();

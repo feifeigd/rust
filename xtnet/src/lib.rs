@@ -1,16 +1,15 @@
 /*!
  * This crate provides functionality for adding things
- * 
+ *
  * # Example
  * ```
  * use xtnet::sum;
- * 
+ *
  * let work_a = 4;
  * let work_b = 34;
  * let total_work = sum(work_a, work_b);
  * ```
  */
-
 
 /// cute
 pub fn add(left: usize, right: usize) -> usize {
@@ -31,9 +30,9 @@ pub fn greet() {
 }
 
 /// Sum tow arguments
-/// 
+///
 /// # Example
-/// 
+///
 /// ```
 /// assert_eq!(xtnet::sum(1, 1), 2);
 /// ```
@@ -67,21 +66,21 @@ mod tests {
     }
 }
 
-pub fn slow_fibonacci(nth: usize)->u64{
-    if nth <=1 {
+pub fn slow_fibonacci(nth: usize) -> u64 {
+    if nth <= 1 {
         return nth as u64;
     }
-    return slow_fibonacci(nth -1) + slow_fibonacci(nth -2);
+    return slow_fibonacci(nth - 1) + slow_fibonacci(nth - 2);
 }
 
-pub fn fast_fibonacci(nth:usize)->u64{
-    let mut a=0;
+pub fn fast_fibonacci(nth: usize) -> u64 {
+    let mut a = 0;
     let mut b = 1;
-    let mut c =0;
+    let mut c = 0;
     for _ in 1..nth {
-        c=a+b;
-        a=b;
-        b=c;
+        c = a + b;
+        a = b;
+        b = c;
     }
     c
 }
