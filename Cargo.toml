@@ -3,6 +3,7 @@ members=[
     "app",
     "dining_philosophers",
     "imgtool",
+    "logic_gates",
     "xtnet"
 ]
 
