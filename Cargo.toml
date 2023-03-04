@@ -4,6 +4,7 @@ members=[
     "dining_philosophers",
     "imgtool",
     "logic_gates",
+    "super_player",
     "xtnet"
 ]
 
