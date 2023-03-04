@@ -1,7 +1,9 @@
 mod media;
+mod trait_bound_intro;
 mod trait_inherbitance;
 
 use media::*;
+use trait_bound_intro::*;
 use trait_inherbitance::*;
 
 fn main() {
@@ -18,6 +20,10 @@ fn main() {
         roadster.model(),
         roadster.get_price()
     );
+
+    let game = Game;
+    game.load(Enemy);
+    game.load(Hero);
 }
 
 struct Audio(String);
