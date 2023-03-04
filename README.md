@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/$USERNAME/$REPO_NAME.svg?branch=master)](https://travis-ci.org/creativcoder/logic_gates)
+
 # rust
 rust
 
