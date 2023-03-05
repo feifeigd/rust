@@ -1,8 +1,13 @@
 mod media;
+mod trait_bound_basic;
+mod trait_bound_functions;
 mod trait_bound_intro;
 mod trait_inherbitance;
 
 use media::*;
+use trait_bound_basic::*;
+use trait_bound_functions::*;
+//use trait_bound_functions::{eat,Food};
 use trait_bound_intro::*;
 use trait_inherbitance::*;
 
@@ -24,6 +29,11 @@ fn main() {
     let game = Game;
     game.load(Enemy);
     game.load(Hero);
+
+    add_thing(2, 2);
+
+    let apple = Food(Apple);
+    eat(apple);
 }
 
 struct Audio(String);
