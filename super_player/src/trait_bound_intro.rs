@@ -2,7 +2,7 @@ pub struct Game;
 pub struct Enemy;
 pub struct Hero;
 
-trait Loadable{
+trait Loadable {
     fn init(&self);
 }
 
@@ -12,14 +12,14 @@ impl Game {
     }
 }
 
-impl Loadable for Enemy{
-    fn init(&self){
+impl Loadable for Enemy {
+    fn init(&self) {
         println!("Enemy loaded")
     }
 }
 
-impl Loadable for Hero{
-    fn init(&self){
+impl Loadable for Hero {
+    fn init(&self) {
         println!("Hero loaded")
     }
 }
