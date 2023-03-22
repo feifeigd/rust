@@ -4,6 +4,7 @@ members=[
     "complex",
     "dining_philosophers",
     "imgtool",
+    "into_map_demo",
     "logic_gates",
     "macro_map",
     "super_player",
