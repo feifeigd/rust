@@ -8,6 +8,7 @@ members=[
     "into_map_demo",
     "logic_gates",
     "macro_map",
+    "rust_from_c",
     "super_player",
     "xtnet"
 ]
