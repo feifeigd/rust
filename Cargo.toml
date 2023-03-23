@@ -1,6 +1,7 @@
 [workspace]
 members=[
     "app",
+    "c_from_rust",
     "complex",
     "dining_philosophers",
     "imgtool",
