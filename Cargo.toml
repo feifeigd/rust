@@ -10,6 +10,7 @@ members=[
     "macro_map",
     "rust_from_c",
     "super_player",
+    "user_auth",
     "xtnet"
 ]
 
