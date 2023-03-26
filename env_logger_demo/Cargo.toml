@@ -8,4 +8,4 @@ edition = "2021"
 [dependencies]
 env_logger = "*"
 user_auth = {path = "../user_auth"}
-log = {features = ["release_max_level_error", "max_level_trace", ]}
+log = {version = "*", features = ["release_max_level_error", "max_level_trace", ]}
