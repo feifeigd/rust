@@ -11,6 +11,7 @@ members=[
     "my_app",
     "my_lib",
     "rust_from_c",
+    "slog_demo",
     "super_player",
     "user_auth",
     "xtnet"
