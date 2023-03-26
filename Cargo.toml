@@ -8,6 +8,8 @@ members=[
     "into_map_demo",
     "logic_gates",
     "macro_map",
+    "my_app",
+    "my_lib",
     "rust_from_c",
     "super_player",
     "user_auth",
