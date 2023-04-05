@@ -7,7 +7,7 @@ use std::env;
 
 use crate::state::State;
 
-use actix_web::{dev::Service as _, middleware::Logger, App, HttpServer};
+use actix_web::{dev::Service as _, middleware::Logger, App, HttpServer, web};
 use futures_util::future::FutureExt;
 
 // use env_logger::Env;
@@ -31,7 +31,7 @@ async fn main() -> std::io::Result<()> {
     let state = State::init();
     let server = HttpServer::new(move || {
         App::new()
-            .app_data(state.clone())
+            .app_data(web::Data::new(state.clone()) )
             // 注册中间件
             .wrap(Logger::default())
             .wrap_fn(|req, srv| {
