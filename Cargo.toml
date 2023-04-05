@@ -4,6 +4,7 @@ members=[
     "c_from_rust",
     "complex",
     "dining_philosophers",
+    "hello_actix_web",
     "imgtool",
     "into_map_demo",
     "logic_gates",
