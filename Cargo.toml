@@ -7,6 +7,7 @@ members=[
     "hello_actix_web",
     "imgtool",
     "into_map_demo",
+    "linksnap",
     "logic_gates",
     "macro_map",
     "my_app",
