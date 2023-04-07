@@ -40,7 +40,7 @@ async fn main() -> std::io::Result<()> {
             .service(index)
             .service(echo)
             .route("/hey", web::get().to(manual_hello))
-            .service(users::index)
+            .service(users::scope())
         // .service(scope)
     });
 
