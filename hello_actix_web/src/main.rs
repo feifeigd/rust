@@ -1,3 +1,5 @@
+mod users;
+
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
 
 #[get("/")]
@@ -38,6 +40,7 @@ async fn main() -> std::io::Result<()> {
             .service(index)
             .service(echo)
             .route("/hey", web::get().to(manual_hello))
+            .service(users::index)
         // .service(scope)
     });
 
